@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{lmodern}
+
+% Color definitions
+\definecolor{headercolor}{RGB}{0,0,0}
+\definecolor{sectioncolor}{RGB}{0,102,204}
+
+% Formatting
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{6pt}
+
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textit{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}
+  \vspace{-4pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries Juan Pablo Huaco} \\[4pt]
+    {\large AI Developer | Full Stack Developer } \\[6pt]
+    \small
+    \faEnvelope\ jphuaco@gmail.com \quad
+    \faLinkedin\ linkedin.com/in/juanhuaco \quad
+    \faGithub\ github.com/juanhuaco
+\end{center}
+
+\vspace{-8pt}
+
+% Profile
+\section{Professional Summary}
+\small
+Full Stack Developer and Data Engineer with 2+ years of experience specializing in AI/ML solutions, data engineering pipelines, and scalable system architecture. Proven expertise in developing intelligent systems using Python, NLP, and machine learning frameworks. Strong background in API integrations, backend development, and building robust data processing solutions. Passionate about leveraging AI technologies to solve complex business problems.
+
+% Skills
+\section{Technical Skills}
+\small
+\begin{itemize}[leftmargin=0.15in, itemsep=1pt, parsep=0pt]
+    \item \textbf{AI/ML \& Data:} Python, Scikit-Learn, Pandas, NumPy, NLP, Feature Engineering, Machine Learning Algorithms, Data Analysis, Elasticsearch, MongoDB
+    \item \textbf{Backend Development:} FastAPI, Laravel, Spring Boot, RESTful APIs, PostgreSQL, SQL Server, MySQL, Prisma ORM, Eloquent ORM
+    \item \textbf{Frontend Development:} React, Next.js, Svelte, TypeScript, JavaScript, Tailwind CSS, Redux
+    \item \textbf{Tools \& DevOps:} Docker, Git, Jupyter Notebook, Postman, Cursor, VS Code, CI/CD, Prompt Engineering
+\end{itemize}
+
+% Experience
+\section{Professional Experience}
+
+\resumeSubheading
+{AI Developer \& Data Engineer}{Present}
+{Intelligence Company (U.S.)}{Remote}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.15in, itemsep=1pt, parsep=0pt]
+    \resumeItem{Developing AI-powered intelligence solutions using FastMCP and Python for advanced data processing and analysis workflows.}
+    \resumeItem{Building scalable data pipelines integrating Elasticsearch and MongoDB to handle large-scale data ingestion, indexing, and retrieval operations.}
+    \resumeItem{Implementing machine learning models and NLP techniques for automated data classification and pattern recognition.}
+    \resumeItem{Designing RESTful APIs and backend services to support real-time data querying and intelligence reporting systems.}
+\end{itemize}
+
+\resumeSubheading
+{Full Stack Developer}{6 months}
+{Logistics Technology Company}{Argentina \& Chile}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.15in, itemsep=1pt, parsep=0pt]
+    \resumeItem{\textbf{Mercado Libre API Integration:} Architected and developed a complete OAuth-based integration system using Laravel and Svelte, implementing secure authentication flows, automated token refresh mechanisms, and bidirectional data synchronization with Mercado Libre's order and shipment APIs. Deployed containerized application using Docker and PostgreSQL.}
+    \resumeItem{\textbf{Supply Chain Integration:} Developed critical API endpoints for supply chain integration between international clients and logistics providers. Built custom Svelte toolkit for API testing and validation. Optimized SQL queries and stored procedures, achieving 3x improvement in execution speed.}
+    \resumeItem{Technologies: Laravel 12, Svelte 5, Docker, PostgreSQL, SQL Server, RESTful APIs, AS2 Protocol, Eloquent ORM}
+\end{itemize}
+
+\resumeSubheading
+{Machine Learning Developer}{1 month}
+{Sleep Disorder Classifier Project}{Argentina}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.15in, itemsep=1pt, parsep=0pt]
+    \resumeItem{Developed a machine learning solution to classify sleep disorders using clinical patient data, implementing comprehensive feature engineering pipeline to transform raw medical data into ML-ready features.}
+    \resumeItem{Trained and evaluated multiple classification algorithms (K-Nearest Neighbors, Gaussian Naive Bayes, Random Forest, Decision Tree), performing model comparison and optimization to achieve optimal performance.}
+    \resumeItem{Technologies: Python, Scikit-Learn, Pandas, NumPy, Seaborn, Matplotlib, Jupyter Notebook, Google Colab}
+\end{itemize}
+
+\resumeSubheading
+{Software Developer}{1 week}
+{Personal Portfolio Project}{Argentina}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.15in, itemsep=1pt, parsep=0pt]
+    \resumeItem{Built modern, responsive portfolio website from scratch using Next.js, React, and TypeScript with Tailwind CSS.}
+    \resumeItem{Implemented CI/CD pipeline with Vercel for automated deployments and optimized performance.}
+\end{itemize}
+
+% Education
+\section{Education}
+\resumeSubheading
+{Systems Engineering (Final Project in Progress)}{Expected 2025}
+{Universidad Tecnológica Nacional - Facultad Regional Santa Fe}{Santa Fe, Argentina}
+
+\vspace{4pt}
+
+\textbf{Relevant Coursework:} Innovation in NLP, Generative AI, and Knowledge Graphs (2024) | Numerical Methods \& Optimization | Signal Processing \& Analysis | Data Structures \& Algorithms
+
+% Languages
+\section{Languages}
+\small
+\textbf{Spanish:} Native \quad | \quad \textbf{English:} Upper-Intermediate (B2) \quad | \quad \textbf{Portuguese:} Upper-Intermediate (B2) \quad | \quad \textbf{German:} Elementary (A1)
+
+\end{document}
+
